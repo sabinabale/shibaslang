@@ -73,7 +73,7 @@ export default function Home() {
       <div className="flex md:flex-row flex-col gap-5">
         <textarea
           placeholder="Piš sem"
-          className="md:w-1/2 md:h-80 w-40 bg-orange-50 border-[4px] rounded-lg resize-none p-4 outline-none hover:border-amber-600 focus:border-amber-700 transition-all duration-500 ease-in-out"
+          className="md:w-1/2 md:h-80 h-40 bg-orange-50 border-[4px] rounded-lg resize-none p-4 outline-none hover:border-amber-600 focus:border-amber-700 transition-all duration-500 ease-in-out"
           onChange={handleChange}
         ></textarea>
         <div className="md:w-1/2 h-80 border bg-orange-100 rounded-lg p-4">
