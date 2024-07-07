@@ -58,8 +58,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen p-24 bg-gradient-to-r from-amber-500 to-amber-600">
-      <header className="flex items-center gap-10 mb-5">
+    <main className="min-h-screen p-5 md:p-24 bg-gradient-to-r from-amber-500 to-amber-600">
+      <header className="flex items-center gap-5 mb-5">
         <Image
           src="/shibainuyoga.svg"
           alt="Shiba Inu"
@@ -80,7 +80,7 @@ export default function Home() {
           {text}
         </div>
       </div>
-      <footer className="flex justify-between px-2 py-2 mt-2">
+      <footer className="flex flex-col items-center md:flex-row md:justify-between gap-3 px-2 py-2 mt-2">
         <small>© {new Date().getFullYear()}. Všechna práva vyhrazena.</small>
         <small>
           Stvořitelka{" "}
