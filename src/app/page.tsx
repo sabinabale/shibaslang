@@ -41,12 +41,14 @@ export default function Home() {
         result += "i";
       } else if (input[i] === "r") {
         result += "l";
+      } else if (input[i] === "k") {
+        result += "g";
       } else if (input[i] === "z") {
         result += "s";
       } else if (input[i] === "ď") {
         result += "ť";
       } else if (input[i] === "č" || input[i] === "ž" || input[i] === "š") {
-        result += input[i];
+        result += "š";
       } else {
         result += input[i];
       }
