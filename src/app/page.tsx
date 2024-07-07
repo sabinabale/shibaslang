@@ -5,13 +5,13 @@ import { useState } from "react";
 export default function Home() {
   const [text, setText] = useState("");
 
-  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  function handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
     const inputText = event.target.value;
     const transformedText = transformText(inputText);
     setText(transformedText);
-  };
+  }
 
-  const transformText = (input: string) => {
+  function transformText(input: string) {
     let result = "";
     let i = 0;
 
@@ -55,7 +55,7 @@ export default function Home() {
     }
 
     return result;
-  };
+  }
 
   return (
     <main className="min-h-screen p-5 md:p-24 bg-gradient-to-r from-amber-500 to-amber-600">
