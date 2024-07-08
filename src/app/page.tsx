@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { Gluten } from "next/font/google";
+
+const gluten = Gluten({ subsets: ["latin"] });
 
 export default function Home() {
   const [text, setText] = useState("");
@@ -61,14 +64,16 @@ export default function Home() {
 
   return (
     <main className="min-h-screen p-5 md:p-24 bg-gradient-to-r from-amber-500 to-amber-600">
-      <header className="flex items-center gap-5 mb-5">
+      <header className="flex items-end gap-5 mb-5">
         <Image
           src="/shibainuyoga.svg"
           alt="Shiba Inu"
           width={100}
           height={100}
         />
-        <h1 className="sm:text-[20px] md:text-3xl font-bold text-amber-900">
+        <h1
+          className={` ${gluten.className} leading-none sm:text-[20px] md:text-[80px] font-bold text-amber-900`}
+        >
           SHIBALANG
         </h1>
       </header>
@@ -78,7 +83,7 @@ export default function Home() {
           className="md:w-1/2 md:h-80 h-40 bg-orange-50 border-[4px] rounded-lg resize-none p-4 outline-none hover:border-amber-600 focus:border-amber-700 transition-all duration-500 ease-in-out"
           onChange={handleChange}
         ></textarea>
-        <div className="md:w-1/2 h-80 border bg-orange-100 rounded-lg p-4">
+        <div className="md:w-1/2 md:h-80 h-40 border bg-orange-100 rounded-lg p-4">
           {text}
         </div>
       </div>
