@@ -72,7 +72,7 @@ export default function Home() {
           height={100}
         />
         <h1
-          className={` ${gluten.className} leading-none sm:text-[20px] md:text-[80px] font-bold text-amber-900`}
+          className={` ${gluten.className} leading-none mb-4 md:mb-0 text-[30px] md:text-[80px] font-bold text-amber-900`}
         >
           SHIBALANG
         </h1>
