@@ -9,7 +9,7 @@ export default function Home() {
   const [text, setText] = useState("");
 
   function handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
-    const inputText = event.target.value.toLowerCase(); // Convert input to lowercase
+    const inputText = event.target.value.toLowerCase();
     const transformedText = transformText(inputText);
     setText(transformedText);
   }
